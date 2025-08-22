@@ -92,7 +92,7 @@ namespace Jellyfin.Plugin.MediaBar.Services
         {
             yield return new TaskTriggerInfo()
             {
-                Type = TaskTriggerInfo.TriggerStartup
+                Type = TaskTriggerInfoType.StartupTrigger
             };
         }
     }
