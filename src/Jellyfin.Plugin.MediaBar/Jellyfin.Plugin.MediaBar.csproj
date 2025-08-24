@@ -40,6 +40,8 @@
     <ItemGroup>
         <None Include="..\..\README.md" />
         <None Include="..\logo.png" CopyToOutputDirectory="Always" />
+        <None Include="..\..\slideshowpure.js" />
+        <None Include="..\..\slideshowpure.css" />
     </ItemGroup>
     
     <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="Exists('C:\ProgramData\Jellyfin\Server\plugins\MediaBar')">
