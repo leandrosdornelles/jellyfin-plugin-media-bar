@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Runtime.Loader;
 using System.Text;
 using Jellyfin.Plugin.MediaBar.Helpers;
+using Jellyfin.Plugin.MediaBar.JellyfinVersionSpecific;
 using Jellyfin.Plugin.MediaBar.Model;
 using MediaBrowser.Common.Configuration;
 using MediaBrowser.Controller;
@@ -88,12 +89,6 @@ namespace Jellyfin.Plugin.MediaBar.Services
             return Task.CompletedTask;
         }
 
-        public IEnumerable<TaskTriggerInfo> GetDefaultTriggers()
-        {
-            yield return new TaskTriggerInfo()
-            {
-                Type = TaskTriggerInfo.TriggerStartup
-            };
-        }
+        public IEnumerable<TaskTriggerInfo> GetDefaultTriggers() => StartupServiceHelper.GetDefaultTriggers();
     }
 }

@@ -153,11 +153,13 @@ const initJellyfinData = (callback) => {
  */
 
 const initLoadingScreen = () => {
-  const currentPath = window.location.href.toLowerCase();
+  const currentPath = window.location.href.toLowerCase().replace(window.location.origin, "");
   const isHomePage =
-    currentPath.includes("/web/#/home.html") ||
-    currentPath.includes("/web/index.html#/home.html") ||
-    currentPath.endsWith("/web/");
+    currentPath === "/web/#/home.html" ||
+    currentPath === "/web/#/home" ||
+    currentPath === "/web/index.html#/home.html" ||
+    currentPath === "/web/index.html#/home" ||
+    currentPath === "/web/";
 
   if (!isHomePage) return;
 
@@ -732,7 +734,8 @@ const VisibilityObserver = {
     if (!container) return;
 
     const isVisible =
-      window.location.hash.includes("#/home.html") &&
+        (window.location.hash === "#/home.html" ||
+         window.location.hash === "#/home") &&
       activeTab.getAttribute("data-index") === "0";
 
     container.style.display = isVisible ? "block" : "none";
