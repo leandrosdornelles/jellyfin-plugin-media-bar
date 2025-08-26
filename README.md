@@ -7,7 +7,7 @@
 	<a href="https://github.com/IAmParadox27/jellyfin-plugin-media-bar/?tab=License-1-ov-file">
 		<img alt="DBAD" src="https://img.shields.io/badge/license-DBAD-blue" />
 	</a>
-	<a href="https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases">
+	<a href="https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases">
 		<img alt="Current Release" src="https://img.shields.io/github/release/IAmParadox27/jellyfin-plugin-media-bar.svg" />
 	</a>
 </p>
