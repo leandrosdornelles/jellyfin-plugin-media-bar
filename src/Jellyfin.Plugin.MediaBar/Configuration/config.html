@@ -94,6 +94,11 @@
                             document.querySelector("[data-id=enabledSelect]").value = config.Enabled;
                             document.querySelector("[data-id=chkUseAvatarsFile]").checked = config.UseAvatarsFile;
                             document.querySelector("[data-id=txtAvatarsPlaylist]").value = config.AvatarsPlaylist;
+                            
+                            if (config.VersionString === 'latest') {
+                                config.VersionString = 'main';
+                            }
+                            
                             document.querySelector("[data-id=txtVersionString]").value = config.VersionString;
                         })
                         .catch(function (error) {
