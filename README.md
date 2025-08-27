@@ -1,20 +1,60 @@
-# Jellyfin-Media-Bar - Now with Play Now Function
-
-1. Add `https://www.iamparadox.dev/jellyfin/plugins/manifest.json` to your repositories
-2. Install "File Transformation" at least 2.2.1.0
-3. Install latest "Media Bar"
-4. Restart Jellyfin
+<h1 align="center">Media Bar</h1>
+<h2 align="center">A Jellyfin Plugin</h2>
+<p align="center">
+	<img alt="Logo" src="https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-media-bar/main/src/logo.png" />
+	<br />
+	<br />
+	<a href="https://github.com/IAmParadox27/jellyfin-plugin-media-bar/?tab=License-1-ov-file">
+		<img alt="DBAD" src="https://img.shields.io/badge/license-DBAD-blue" />
+	</a>
+	<a href="https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases">
+		<img alt="Current Release" src="https://img.shields.io/github/release/IAmParadox27/jellyfin-plugin-media-bar.svg" />
+	</a>
+</p>
 
 ## Reporting Issues
-If you face issues relating to the visuals or behaviour of buttons added by the Media Bar please report them on MakD's repo (the one this is forked from). This plugin pulls the content from their repo directly and is only in control of adding it without the need for modifying your JF install files. 
+
+If you face issues relating to the visuals or behaviour of buttons added by the Media Bar please report them on MakD's repo (the one this is forked from). This plugin pulls the content from their repo directly and is only in control of adding it without the need for modifying your JF install files.
 
 Any issues with plugin's settings (including using a playlist as your avatar's playlist) should be made here.
-
 ## Development Update - 20th August 2025
 
 Hey all! Things are changing with my plugins are more and more people start to use them and report issues. In order to make it easier for me to manage I'm splitting bugs and features into different areas. For feature requests please head over to <a href="https://features.iamparadox.dev/">https://features.iamparadox.dev/</a> where you'll be able to signin with GitHub and make a feature request. For bugs please report them on the relevant GitHub repo and they will be added to the <a href="https://github.com/users/IAmParadox27/projects/1/views/1">project board</a> when I've seen them. I've found myself struggling to know when issues are made and such recently so I'm also planning to create a system that will monitor a particular view for new issues that come up and send me a notification which should hopefully allow me to keep more up to date and act faster on various issues.
 
 As with a lot of devs, I am very momentum based in my personal life coding and there are often times when these projects may appear dormant, I assure you now that I don't plan to let these projects go stale for a long time, there just might be times where there isn't an update or response for a couple weeks, but I'll try to keep that better than it has been. With all new releases to Jellyfin I will be updating as soon as possible, I have already made a start on 10.11.0 and will release an update to my plugins hopefully not long after that version is officially released!
+## Installation
+
+### Prerequisites
+- This plugin is based on Jellyfin Version `10.10.7`
+- The following plugins are required to also be installed, please following their installation guides:
+  - File Transformation (https://github.com/IAmParadox27/jellyfin-plugin-file-transformation) at least v2.2.1.0
+
+### Installation
+1. Add `https://www.iamparadox.dev/jellyfin/plugins/manifest.json` to your plugin repositories.
+2. Install `Media Bar` from the Catalogue.
+3. Restart Jellyfin.
+4. Force refresh your webpage (or app) and you should see your new Media Bar at the top of the home page.
+## Upcoming Features/Known Issues
+If you find an issue with any of the sections or usage of the plugin, please open an issue on GitHub.
+
+### FAQ
+
+#### I've installed the plugins and the media bar doesn't appear. How do I fix?
+This is common, particularly on a fresh install. The first thing you should try is the following
+1. Launch your browsers developer tools
+
+![image](https://github.com/user-attachments/assets/e8781a69-464e-430e-a07c-5172a620ef84)
+
+3. Open the **Network** tab across the top bar
+4. Check the **Disable cache** checkbox
+5. Refresh the page **while the dev tools are still open**
+
+![image](https://github.com/user-attachments/assets/6f8c3fc7-89a3-4475-b8a6-cd4a58d51b84)
+
+## Credits
+Credits for this plugin go to @MakD for his original work and to @BobHasNoSoul and @SethBacon for their influence to MakD. For full credits see below in the original README content
+
+## Original README
 
 <details>
   <summary>Original README.md from MakD</summary>
