@@ -24,7 +24,7 @@ const initLoadingScreen = () => {
       <div class="bar-loading" id="page-loader">
           <h1>
               <img src="https://jellyfin.org/images/logo.svg" 
-                  alt="Server Logo" 
+                  alt="Server Logo BLAU" 
                   style="width: 250px; height: auto;">
           </h1>
           <div class="docspinner-loader">
